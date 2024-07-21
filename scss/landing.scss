@@ -1,0 +1,136 @@
+@use 'Partials/global';
+
+.coffee-description{
+    display: inline-block;
+    width: 55.1875rem;
+}
+
+.header-left{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.header-left > article{
+    margin-left: 7.5rem;
+    margin-bottom: 7.5rem;
+    padding-top: 12rem;
+    width: 20.625rem;
+}
+
+.header-right{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.header-left > article > h1 {
+    text-align: left;
+}
+
+.header-left > article > a{
+    margin-top: 2.5rem;
+    display:block;
+    ;
+}
+
+.header-right > img {
+    margin: auto;
+    display: block;
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+.discount-banner{
+    width: 90%;
+    padding: 1.25rem; 
+    background-color: var(--graphite);
+    color: var(--white);
+    margin: 11.25rem auto;
+    text-align: center;
+    font-size: 2.8125rem;
+
+}
+
+.view-all-products{
+    text-transform: uppercase;
+    display: block;
+    margin:2.5rem auto;
+    
+}
+
+.center-align{
+    text-align: center;
+}
+
+.footer-information{
+    display: inline-block;
+    padding: 1.25rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+footer a{
+    text-decoration: none;
+}
+.bold-text{
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+}
+
+.our-product-section{
+    padding-bottom: 2.5rem;
+}
+
+.product-card{
+    width: 20.625rem;
+    height: 27.5rem;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    box-shadow: 0 .3125rem .5625rem .0625rem;
+    color: 0, 0, 0, 0.25;
+    display: inline-block;
+    margin: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 2.0625rem;
+}
+
+.product-card > img {
+    margin-top: 1.25rem;
+}
+
+.landing-page__product-card--subsection {
+    background-color: var(--nitro-pink);
+    display:flex;
+}
+
+.landing-page__product-card--subsection > div {
+    flex-grow: 1;
+}
+
+.landing-page__quantity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.125rem;
+    color: var(--gray);
+}
+
+.landing-page_price{
+    color: var(--nitro-blue);
+    font-weight: bold;
+    align-items: flex-end;
+    margin-top: 1.25rem;
+}
+
+
+.our-product-section > h2 {
+    padding-top: 2.5rem;
+}

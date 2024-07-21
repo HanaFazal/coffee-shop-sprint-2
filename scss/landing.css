@@ -1,0 +1,251 @@
+/*colors*/
+:root {
+  --nitro-blue: #5BACC3;
+  --nitro-pink: #FFF0ED;
+  --graphite: #393939;
+  --light-gray: #F7F7F7;
+  --white: #fff;
+  --gray: #909090;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+h3, .page-header__a--title {
+  font-size: 2.0625rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.page-header__img--logo {
+  padding-left: 1.25rem;
+  padding-top: 1.2rem;
+}
+
+header {
+  background-color: var(--nitro-pink);
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  background-color: var(--nitro-blue);
+  color: var(--white);
+  border: 0rem;
+  padding: 1.25rem;
+  text-transform: uppercase;
+  width: 11.25rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nitro-blue-text {
+  color: var(--nitro-blue);
+  margin: 0;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-left: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.nav-list > li {
+  display: inline-block;
+  padding: 1.25rem;
+}
+
+.nitro-blue-dividers {
+  color: var(--nitro-blue);
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+.light-gray-background {
+  background-color: var(--light-gray);
+}
+
+.nitro-pink-background {
+  background-color: var(--nitro-pink);
+  margin: 0rem;
+}
+
+.graphite-background {
+  background-color: var(--graphite);
+  color: #fff;
+}
+
+.tilebox {
+  background-color: var(--graphite);
+  width: 18.75rem;
+  height: 12.5rem;
+  padding: 1.25rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 3.125rem;
+}
+
+.images {
+  height: 17.5rem;
+}
+
+.sub-navigationlink {
+  width: 100%;
+  height: 5rem;
+  padding: 1.25rem;
+  background-color: var(--graphite);
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--nitro-pink);
+}
+
+.coffee-description {
+  display: inline-block;
+  width: 55.1875rem;
+}
+
+.header-left {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+.header-left > article {
+  margin-left: 7.5rem;
+  margin-bottom: 7.5rem;
+  padding-top: 12rem;
+  width: 20.625rem;
+}
+
+.header-right {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+.header-left > article > h1 {
+  text-align: left;
+}
+
+.header-left > article > a {
+  margin-top: 2.5rem;
+  display: block;
+}
+
+.header-right > img {
+  margin: auto;
+  display: block;
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.discount-banner {
+  width: 90%;
+  padding: 1.25rem;
+  background-color: var(--graphite);
+  color: var(--white);
+  margin: 11.25rem auto;
+  text-align: center;
+  font-size: 2.8125rem;
+}
+
+.view-all-products {
+  text-transform: uppercase;
+  display: block;
+  margin: 2.5rem auto;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.footer-information {
+  display: inline-block;
+  padding: 1.25rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.bold-text {
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+}
+
+.our-product-section {
+  padding-bottom: 2.5rem;
+}
+
+.product-card {
+  width: 20.625rem;
+  height: 27.5rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.3125rem 0.5625rem 0.0625rem;
+  color: 0, 0, 0, 0.25;
+  display: inline-block;
+  margin: 40px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 2.0625rem;
+}
+
+.product-card > img {
+  margin-top: 1.25rem;
+}
+
+.landing-page__product-card--subsection {
+  background-color: var(--nitro-pink);
+  display: flex;
+}
+
+.landing-page__product-card--subsection > div {
+  flex-grow: 1;
+}
+
+.landing-page__quantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.125rem;
+  color: var(--gray);
+}
+
+.landing-page_price {
+  color: var(--nitro-blue);
+  font-weight: bold;
+  align-items: flex-end;
+  margin-top: 1.25rem;
+}
+
+.our-product-section > h2 {
+  padding-top: 2.5rem;
+}/*# sourceMappingURL=landing.css.map */

@@ -39,6 +39,10 @@ h1, h2 {
   padding-top: 0.625rem;
 }
 
+.button-outline:active {
+  transform: translateX(0.5rem) translateY(0.5rem);
+}
+
 /*website page header*/
 .page-header {
   background-color: var(--nitro-pink);
@@ -325,13 +329,37 @@ footer {
   width: 25rem;
   height: 25rem;
   background-image: url("../assets/images/coldbrewbackground.png");
+  background-size: cover;
+}
+
+.landing-page__coffee-can--outline {
+  border: 0.3125rem solid var(--nitro-blue);
+  width: 100%;
+  height: calc(100% - 1rem);
+  position: relative;
+  top: -1rem;
+  left: -1rem;
+  padding-top: 1rem;
 }
 
 .landing-page__coffee-can--image {
-  margin: auto;
+  margin: 3.75rem auto;
   display: block;
 }
 
+.landing-page__coffee-can--image:hover {
+  animation: spin 2s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*Discount Banner Section*/
 .discount-banner {
   width: 90%;
@@ -341,8 +369,17 @@ footer {
   margin: 11.25rem auto;
   text-align: center;
   font-size: 2.8125rem;
+  animation: pulse 5s infinite;
 }
 
+@keyframes pulse {
+  0% {
+    background-color: var(--graphite);
+  }
+  100% {
+    background-color: var(--nitro-blue);
+  }
+}
 /*Footer Section*/
 .footer {
   background-color: var(--nitro-pink);

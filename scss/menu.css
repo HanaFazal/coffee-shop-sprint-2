@@ -39,6 +39,10 @@ h1, h2 {
   padding-top: 0.625rem;
 }
 
+.button-outline:active {
+  transform: translateX(0.5rem) translateY(0.5rem);
+}
+
 /*website page header*/
 .page-header {
   background-color: var(--nitro-pink);

@@ -42,7 +42,9 @@ h1,h2{
     padding-top: .625rem;
 }
 
-
+.button-outline:active {
+    transform: translateX(0.5rem) translateY(0.5rem);
+}
 
 
 /*website page header*/

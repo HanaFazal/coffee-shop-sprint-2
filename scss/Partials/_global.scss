@@ -1,3 +1,5 @@
+
+
 /*colors*/
 :root {
     --nitro-blue: #5BACC3;
@@ -8,33 +10,14 @@
     --gray: #909090;
 }
 
+/*website wide styles*/
+
 h1,h2{
     font-size: 3.75rem;
     font-weight: 300;
     text-align: center;
     margin: 0;
 }
-
-
-h3, .page-header__a--title{
-    font-size: 2.0625rem;
-    font-weight: 300;
-    margin-bottom: 0;
-}
-.page-header__img--logo{
-    padding-left: 1.25rem;
-    padding-top: 1.2rem;
-}
-
-header{
-    background-color: var(--nitro-pink);
-}
-
-header a{
-    text-decoration: none;
-    color: black;
-}
-
 
 .button{
     background-color: var(--nitro-blue);
@@ -46,6 +29,101 @@ header a{
     text-decoration: none;
     text-align: center;
 }
+
+
+/*website page header*/
+
+
+.page-header{
+    background-color: var(--nitro-pink);
+    padding-bottom: 1.25rem;
+}
+
+.page-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.page-header__branding{
+    display: flex;
+    align-items: flex-end;
+}
+
+.page-header__nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .nav-list {
+        list-style-type: none;
+        text-transform: uppercase;
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    
+    }
+    
+    .nav-list >li {
+        display: inline-block;
+        padding: 1.25rem;
+    }
+
+    .nitro-pink-background {
+    background-color: var(--nitro-pink);
+    margin: 0rem;
+}
+    
+}
+
+.page-header__a--logo{
+
+}
+
+
+.page-header__img--logo{
+    padding-left: 1.25rem;
+    padding-top: 1.2rem;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+h3,
+.page-header__a--title{
+    font-size: 2.0625rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-style: normal;
+    
+}
+
+.page-header__ul{
+
+}
+
+.page-header__a{
+    font-weight: 500;
+}
+
+.page-header__a--shop-now{
+    color: var(--nitro-blue) !important;
+}
+
+
+
+
+.page-header__list{
+
+}
+
+
+
+
+
+
+
+
 
 .nitro-blue-text {
     color: var(--nitro-blue);
@@ -90,19 +168,7 @@ margin: 0;
     color: #fff;
 }
 
-.tilebox{
-    background-color: var(--graphite);
-    width: 18.75rem;
-    height: 12.5rem;
-    padding: 1.25rem;
-    color: var(--white);
-    text-transform: uppercase;
-    margin: 0 auto;
-}
 
-.icon{
-    width: 3.125rem;
-}
 
 
 .images{

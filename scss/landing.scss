@@ -1,45 +1,204 @@
 @use 'Partials/global';
 
-.coffee-description{
-    display: inline-block;
-    width: 55.1875rem;
+
+
+/*landing page main section*/
+
+.landing-page{
+
+}
+
+.landing-page__hero{
+    display: flex;
+    padding-bottom: 2.5rem;
 }
 
 .header-left{
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
     width: 49%;
     vertical-align: top;
 }
 
-.header-left > article{
+.landing-page__header-left > article{
     margin-left: 7.5rem;
     margin-bottom: 7.5rem;
     padding-top: 12rem;
     width: 20.625rem;
 }
 
-.header-right{
-    display: inline-block;
+.landing-page__header-right{
+    display: flex;
+    justify-content: flex-end;
     width: 49%;
     vertical-align: top;
 }
 
-.header-left > article > h1 {
+.landing-page__header-left > article > h1 {
     text-align: left;
 }
 
-.header-left > article > a{
+.landing-page__header-left > article > a{
     margin-top: 2.5rem;
     display:block;
     ;
 }
 
-.header-right > img {
+.landing-page__header-right > img {
     margin: auto;
     display: block;
     margin-bottom: 1.25rem;
     margin-top: 2.5rem;
 }
+
+
+.landing-page__our-product-section{
+    background-color: var(--light-gray);
+
+}
+
+.landing-page__title{
+
+}
+
+.landing-page__products{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.landing-page__product-card{
+    background-color: var(--white);
+    width: 20.625rem;
+    height: 27.5rem;
+    border-radius: .625rem;
+    box-shadow: 0 .3125rem .5625rem .0625rem;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    text-align: center;
+    font-size: 2.0625rem;
+
+}
+
+
+.product-card > img {
+    margin-top: 1.25rem;
+    padding: 0%;
+}
+
+.landing-page__product-card--subsection {
+    background-color: var(--nitro-pink);
+    display:flex;
+    align-items: center;
+    border-radius: .625rem;
+
+}
+
+.landing-page__product-card--subsection > div {
+    flex-grow: 1;
+}
+.landing-page__product-card--bottom-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.25rem;
+}
+
+.landing-page__item{
+    margin-left: 1.25rem;
+}
+.landing-page__quantity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.125rem;
+    color: var(--gray);
+    margin-top: 0%;
+}
+
+.landing-page__product-card--bottom-right{
+    flex-direction: column-reverse;
+}
+
+
+.landing-page_price{
+    color: var(--nitro-blue);
+    font-weight: bold;
+    align-items: flex-end;
+    margin: 1.25rem;
+
+}
+
+
+.our-product-section > h2 {
+    padding-top: 2.5rem;
+}
+
+.landing-page__product-card > img{
+    width: fit-content;
+    margin: auto;
+}
+
+
+
+
+
+/*We're different Section*/
+
+.landing-page__were-different{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2.5rem;
+    margin: 2.5rem;
+
+}
+
+.landing-page__marketing{
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+
+    .landing-page__title{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .landing-page__description{
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem 0;
+
+    }
+
+}
+
+.landing-page__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.landing-page__marketing--icon{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.landing-page__coffee-can--container{
+    width: 25rem;
+    height: 25rem;
+    background-image: url("../assets/images/coldbrewbackground.png");
+
+}
+
+.landing-page__coffee-can--image{
+    margin: auto;
+    display: block;
+
+}
+
+/*Discount Banner Section*/
 
 .discount-banner{
     width: 90%;
@@ -52,7 +211,95 @@
 
 }
 
-.view-all-products{
+
+/*Footer Section*/
+
+.footer{
+    background-color: var(--nitro-pink);
+        display: flex;
+        padding: 1.25rem;
+        text-align: left;
+        vertical-align: top;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow-x: hidden;
+}
+
+
+.footer-logo{
+    position: relative;
+}
+
+.footer-logo > img {
+    width: 6.25rem;
+    opacity: 40%;
+    position: absolute;
+}
+
+.footer-logo--left > img {
+    top: 0;
+    left: -3.75rem;
+
+}
+
+.footer-logo--right >img {
+    bottom: 0;
+    right: -3.75rem;
+}
+
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+.coffee-description{
+    display: inline-block;
+    width: 55.1875rem;
+}
+
+.header-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 49%;
+    vertical-align: top;
+}
+
+.landing-page__header-left > article{
+    margin-left: 7.5rem;
+    margin-bottom: 7.5rem;
+    padding-top: 12rem;
+    width: 20.625rem;
+}
+
+.landing-page__header-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 49%;
+    vertical-align: top;
+}
+
+.landing-page__header-left > article > h1 {
+    text-align: left;
+}
+
+.landing-page__header-left > article > a{
+    margin-top: 2.5rem;
+    display:block;
+    ;
+}
+
+.landing-page__header-right > img {
+    margin: auto;
+    display: block;
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+
+
+.landing-page__view-all-products{
     text-transform: uppercase;
     display: block;
     margin:2.5rem auto;
@@ -63,16 +310,8 @@
     text-align: center;
 }
 
-.footer-information{
-    display: inline-block;
-    padding: 1.25rem;
-    text-align: left;
-    vertical-align: top;
-}
 
-footer a{
-    text-decoration: none;
-}
+
 .bold-text{
     font-weight: bold;
     margin: 0%;
@@ -84,53 +323,5 @@ footer {
     text-align: center;
 }
 
-.our-product-section{
-    padding-bottom: 2.5rem;
-}
-
-.product-card{
-    width: 20.625rem;
-    height: 27.5rem;
-    padding: 1.25rem;
-    border-radius: .625rem;
-    box-shadow: 0 .3125rem .5625rem .0625rem;
-    color: 0, 0, 0, 0.25;
-    display: inline-block;
-    margin: 40px;
-    vertical-align: top;
-    text-align: center;
-    font-size: 2.0625rem;
-}
-
-.product-card > img {
-    margin-top: 1.25rem;
-}
-
-.landing-page__product-card--subsection {
-    background-color: var(--nitro-pink);
-    display:flex;
-}
-
-.landing-page__product-card--subsection > div {
-    flex-grow: 1;
-}
-
-.landing-page__quantity{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 1.125rem;
-    color: var(--gray);
-}
-
-.landing-page_price{
-    color: var(--nitro-blue);
-    font-weight: bold;
-    align-items: flex-end;
-    margin-top: 1.25rem;
-}
 
 
-.our-product-section > h2 {
-    padding-top: 2.5rem;
-}

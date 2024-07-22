@@ -10,12 +10,14 @@
 <body>
     <header class="page-header">
         <nav class="page-header__nav">
-            <a class="page-header__a--logo" href="/index.html">
-                <img class="page-header__img--logo icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
-            </a>
-            <a class="page-header__a--title" href="/index.html">
-                nitro
-            </a>
+            <div class="page-header__branding">
+                <a class="page-header__a--logo" href="/index.html">
+                    <img class="page-header__img--logo icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
+                </a>
+                <a class="page-header__a--title" href="/index.html">
+                    nitro
+                </a>
+            </div>
             <ul class="page-header__ul nav-list">
                 <li class="page-header__list">
                     <a class="page-header__a" href="/index.html">
@@ -28,15 +30,15 @@
                     </a>
                 </li>
                 <li class="page-header__list">
-                    <a class="page-header__a" href="/pages/menu.html" class="nitro-blue-text">
-                            Shop Now
+                    <a class="page-header__a page-header__a--shop-now" href="/pages/menu.html">
+                        Shop Now
                     </a>
                 </li>
             </ul>
         </nav>
-    </header>       
-    <main class="main">
-        <section class="main__coffee-circle coffee-circle">
+    </header>
+    <main>
+        <section class="coffee-circle">
             <h1 class="main__tilebox tilebox">
                 Menu
             </h1>
@@ -62,12 +64,12 @@
         </nav>
         <section class="options nitro-pink-background menu-section">
             <a id="menu-content__section--hot-drinks">
-                <h2 class="options__hot-drinks">Hot Drinks</h2>
+                <h2 class="options__title">Hot Drinks</h2>
             </a>
             <ul class="menu-item-list">
                 <li>
-                    <h3 class="options__hot-drinks--in-house-brew">
-                        In-house Brew
+                    <h3 class="options__sub-title">
+                        In-house brew
                     </h3>
                     <p class="menu-item-description">
                         Our in-house medium roast is a classic balance between sweet vanilla, 
@@ -78,7 +80,7 @@
                     </p>
                 </li>
                 <li>
-                    <h3 class="options__hot-drinks--esspresso">
+                    <h3 class="options__sub-title">
                         Espresso
                     </h3>  
                     <p class="menu-item-description"> 
@@ -94,11 +96,11 @@
         </section>
         <section class="options__cold-drinks light-gray-background menu-section">
             <a id="menu-content__section--cold-drinks">
-                <h2 class="options__cold-drinks">Cold Drinks</h2>
+                <h2 class="options__title">Cold Drinks</h2>
             </a>
             <ul class="menu-item-list"> 
                 <li>
-                    <h3 class="options__cold-drink--cold-brew">
+                    <h3 class="options__sub-title">
                         Cold Brew
                     </h3>    
                     <p class="menu-item-description">
@@ -110,7 +112,7 @@
                     </p>
                 </li>
                 <li>
-                    <h3 class="options__cold-drink--iced-chai-latte">
+                    <h3 class="options__sub-title">
                         Iced Chai Latte
                     </h3>    
                     <p class="menu-item-description">
@@ -125,11 +127,11 @@
         </section>
         <section class="nitro-pink-background menu-section">
             <a id="menu-content__section--pastries">
-                <h2 class="options__pastries">Pastries</h2>
+                <h2 class="options__title">Pastries</h2>
             </a>    
             <ul class="menu-item-list">
                 <li>
-                    <h3 class="options__pastries--bacon-cookie">
+                    <h3 class="options__sub-title">
                         Bacon Oatmeal Raisin Cookie
                     </h3>    
                     <p class="menu-item-description">
@@ -141,7 +143,7 @@
                     </p>
                 </li>
                 <li> 
-                    <h3 class="options__pastries--muffin">
+                    <h3 class="options__sub-title">
                         Blueberry, Lemon and Thyme Muffin
                     </h3>    
                     <p class="menu-item-description">

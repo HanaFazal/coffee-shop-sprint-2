@@ -6,17 +6,18 @@
     <link href="scss/landing.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
     <title>Coffee Shop - Home</title>
-    <!-- Testing changes being made -->
 </head>
     <body>
         <header class="page-header">
             <nav class="page-header__nav">
-                <a class="page-header__a--logo" href="/index.html">
-                    <img class="page-header__img--logo icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
-                </a>
-                <a class="page-header__a--title">
-                    nitro
-                </a>
+                <div class="page-header__branding">
+                    <a class="page-header__a--logo" href="/index.html">
+                        <img class="page-header__img--logo icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
+                    </a>
+                    <a class="page-header__a--title" href="/index.html">
+                        nitro
+                    </a>
+                </div>
                 <ul class="page-header__ul nav-list">
                     <li class="page-header__list">
                         <a class="page-header__a" href="/index.html">
@@ -29,15 +30,15 @@
                         </a>
                     </li>
                     <li class="page-header__list">
-                        <a class="page-header__a" href="/pages/menu.html" class="nitro-blue-text">
-                                Shop Now
+                        <a class="page-header__a page-header__a--shop-now" href="/pages/menu.html">
+                            Shop Now
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main class="landing-page">
-            <section class="landing-page__hero nitro-pink-background">
+            <section class="landing-page__hero">
                 <section class="landing-page__header-left header-left">
                     <article>
                         <h2 class="landing-page__nitro-coffee">
@@ -47,78 +48,97 @@
                             Coffee is a brewed drink prepared from roasted coffee beans, 
                             the seeds of berries from certain Coffea species. 
                         </p>
-                        <a class="landing-page__button" href="/pages/menu.html" class="button">Shop Now</a>
-                    </article class= "landing-page_article" >
+                        <a href="/pages/menu.html" class="button">Shop Now</a>
+                    </article class= "landing-page__article" >
                 </section>
                 <section class="landing-page__header-right header-right">
-                    <img class="landing-page__hero-image" src="assets/images/coffeebeans-hero.png" alt="coffee bag">
+                    <img class="landing-page__hero--image" src="assets/images/coffeebeans-hero.png" alt="coffee bag">
                 </section>
             </section>
             <section class="landing-page__our-product-section light-gray-background center-align our-product-section">
                 <h2 class="landing-page__title">
                     Our Product
                 </h2>
-                <div class="landing-page__product-card product-card">
-                    <img class="landing-page_coffee-beans-image" src="assets/images/coffeebeans.png" alt="coffee beans">
-                    <div class="landing-page__product-card--subsection">
-                        <div class="landing-page__product-card--bottom-left">
-                            <h3 class="landing-page_coffee-beans">
-                                Coffee Beans
-                            </h3>
-                            <p class="landing-page__quantity">
-                                Pack of three
-                            </p>
-                        </div>
-                        <div class="landing-page__product-card--bottom-right">
-                            <p class="landing-page_price">
-                                $19
-                            </p>
+                <section class="landing-page__products">
+                    <div class="landing-page__product-card product-card">
+                        <img class="landing-page_coffee-beans-image" src="assets/images/coffeebeans.png" alt="coffee beans">
+                        <div class="landing-page__product-card--subsection">
+                            <div class="landing-page__product-card--bottom-left">
+                                <h3 class="landing-page_item">
+                                    Coffee Beans
+                                </h3>
+                                <p class="landing-page__quantity">
+                                    Pack of 3
+                                </p>
+                            </div>
+                            <div class="landing-page__product-card--bottom-right">
+                                <p class="landing-page_price">
+                                    $19
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="landing-page__product-card product-card">
-                    <img class="landing-page__cold-brew-image" src="assets/images/coldbrew.png" alt="cold brew">
-                    <h3 class="landing-page__cold-brew">
-                        Cold Brew
-                    </h3>
-                    <p class="landing-page__quantity">
-                        1 can
-                    </p>
-                    <p class="landing-page_price">
-                        $5  
-                    </p>
-                </div>
-                <div class="landing-page_in-house-brew-image landing-page__product-card product-card product-card">
-                    <img class="landing-page__in-house-brew-image" src="assets/images/inhousebrew.png" alt="in-house brew">
-                    <h3 class="landing-page__in-house-brew">
-                        In-house Brew
-                    </h3>
-                    <p class="landing-page__quantity">
-                        1 cup
-                    </p>
-                    <p class="landing-page_price  nitro-blue-text product-price">
-                        $3 
-                    </p>
-                </div>
-                <a class="landing-page__button" href="/pages/menu.html" class="button view-all-products">View all</a>
+                    <div class="landing-page__product-card product-card">
+                        <img class="landing-page_coffee-beans-image" src="assets/images/coldbrew.png" alt="cold brew">
+                        <div class="landing-page__product-card--subsection">
+                            <div class="landing-page__product-card--bottom-left">
+                                <h3 class="landing-page_item">
+                                    Cold Brew
+                                </h3>
+                                <p class="landing-page__quantity">
+                                    1 can
+                                </p>
+                            </div>
+                            <div class="landing-page__product-card--bottom-right">
+                                <p class="landing-page_price">
+                                    $5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landing-page__product-card product-card">
+                        <img class="landing-page_coffee-beans-image" src="assets/images/inhousebrew.png" alt="in-house brew">
+                        <div class="landing-page__product-card--subsection">
+                            <div class="landing-page__product-card--bottom-left">
+                                <h3 class="landing-page_item">
+                                    In-house Brew
+                                </h3>
+                                <p class="landing-page__quantity">
+                                    1 cup
+                                </p>
+                            </div>
+                            <div class="landing-page__product-card--bottom-right">
+                                <p class="landing-page_price">
+                                    $3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a href="/pages/menu.html" class="button view-all-products">View all</a>
             </section>
             <section class="landing-page__were-different">
-                <h2 class="landing-page__title">
-                    We're Different
-                </h2>
-                <p class="landing-page__description">
-                    We grow and roast our own beans. Every bean, every 
-                    cup, every step of the way, we strive for excellence.
-                </p>
-                /*fix these icons after*/ 
-                <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
-                </a>
-                <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
-                </a>
-                <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
-                </a>
-                <a class="landing-page__button" href="./index.html" class="button">Learn More</a>
-                <img class="page-header__icon icon brand-logo" src= "../hana-fazal-coffee-shop-sprint-two/assets/images/coldbrew.png" alt="coffee can">
+                <div class="landing-page__marketing">
+                    <h2 class="landing-page__title">
+                        We're Different
+                    </h2>
+                    <p class="landing-page__description">
+                        We grow and roast our own beans. Every bean, every 
+                        cup, every step of the way, we strive for excellence.
+                    </p>
+                    <div class="landing-page__icons">
+                        <img class="landing-page__marketing--icon" src="assets/logos/planting.svg" alt="coffee plant">
+                        </a>
+                        <img class="landing-page__marketing--icon" src="assets/logos/coffee-beans.svg" alt="coffee beans">
+                        </a>
+                        <img class="landing-page__marketing--icon" src="assets/logos/coffee-cup.svg" alt="coffee cup">
+                        </a>
+                    </div>  
+                    <a href="./index.html" class="button">Learn More</a>  
+                </div>
+                <div class="landing-page__coffee-can--container">
+                    <img class="landing-page__coffee-can--image" src="assets/images/tiltedcan.png" alt="coffee can">
+                </div>
             </section>
             <section>
                 <article>
@@ -128,11 +148,12 @@
                 </article> 
             </section>
         </main>
-        <footer class="footer footer-information">
-            <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
-            <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
+        <footer class="footer">
+            <div class="footer-logo footer-logo--left">
+                <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
+            </div>
             <div class="footer-information">   
-                <h3 class="footer__address-title">
+                <h3 class="footer__title">
                     Address
                 </h3>
                 <p class="footer__address">
@@ -140,8 +161,8 @@
                     New York  
                 </p>
             </div>
-            <div class="footer footer-information">
-                <h3 class="footer__hours-title">
+            <div class="footer-information">
+                <h3 class="footer__title">
                     Hours
                 </h3>
                 <p class="footer__hours-information">
@@ -149,21 +170,24 @@
                     <strong>Saturday-Sunday:</strong> 10am-5pm 
                 </p>
             </div>
-            <div class="footer__social footer-information">
-                <h3 class="footer__social-title">
+            <div class="footer-information">
+                <h3 class="footer__title">
                     Social
                 </h3>
                 <p class="footer__social-links">
                     <a  class="footer__facebook" href="https://www.facebook.com">
-                        <img class="icon" src="assets/logos/Facebook-Icon.svg" alt="Facebook">
+                        <img class="footer-icon" src="assets/logos/Facebook-Icon.svg" alt="Facebook">
                     </a> 
                     <a class="footer__yelp" href="https://www.yelp.com">
-                        <img class="icon" src="assets/logos/Yelp-Icon.svg" alt="Yelp">
+                        <img class="footer-icon" src="assets/logos/Yelp-Icon.svg" alt="Yelp">
                     </a>   
                     <a class="footer__instagram" href="https://www.instagram.com">
-                        <img class="icon" src="assets/logos/Instagram-Icon.svg" alt="Instagram">
+                        <img class="footer-icon" src="assets/logos/Instagram-Icon.svg" alt="Instagram">
                     </a>  
-                </p>  
+                </p>
+            </div>
+            <div class="footer-logo footer-logo--right">
+                <img class="page-header__icon icon brand-logo" src= "../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bag">
             </div>
         </footer>  
     </body>

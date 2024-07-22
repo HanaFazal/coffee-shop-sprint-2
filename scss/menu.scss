@@ -1,5 +1,71 @@
 @use 'Partials/global';
 
+
+
+/*Main Menu Section*/
+
+
+
+.coffee-circle{
+    width: 100%;
+    height: 43.75rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/images/coffee-circle.jpg");
+}
+
+.main__tilebox{
+    .tilebox{
+        background-color: var(--graphite);
+        width: 18.75rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        color: var(--white);
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+}
+
+.main__graphite-background{
+    background-color: var(--graphite);
+}
+
+.main__menu-options{
+
+}
+
+.main__menu-options--list{
+    .menu-options > li{
+        margin: 1rem 0 1rem 0.2rem;
+        padding: 0 1rem;
+        list-style-type: none;
+        border-left: 0.1875rem solid var(--nitro-blue);
+        text-align: center;
+        align-content: center;
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+
+    #menu-content__section--hot-drinks{
+
+    }
+    
+    #menu-content__section--cold-drinks{
+        
+    }
+    
+    #menu-content__section--pastries{
+        
+    }
+}
+
+
+
+
+/*Options Section*/
+
+
 .menu-options{
     text-transform: uppercase;
     margin: 0;
@@ -25,18 +91,19 @@
     padding: 0;
     margin: 0 ;
 }
+
 .menu-item-list > li{
     list-style-type: none;
     text-align: center;
-    width: 35rem;
+    width: 36rem;
     margin: 0 auto;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .menu-item-description{
-    font-style: italic;
-    font-size: 1.125rem;
-    font-weight: 400;
-    margin-bottom: 0 ;
+    width: 75%;
+    margin: auto;
 }
 
 .menu-section{
@@ -44,15 +111,10 @@
     padding-top: 2.5rem;
 }
 
-.coffee-circle{
-    width: 100%;
-    height: 43.75rem;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../assets/images/coffee-circle.jpg");
-}
+
 
 .options__price{
     color: var(--nitro-blue);
     margin: 0;
+    font-weight: bold;
 }

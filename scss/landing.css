@@ -25,6 +25,18 @@ h1, h2 {
   width: 11.25rem;
   text-decoration: none;
   text-align: center;
+  position: relative;
+  display: block;
+}
+
+.button-outline {
+  border: 0.125rem solid var(--graphite);
+  width: 100%;
+  height: calc(100% - 0.625rem);
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding-top: 0.625rem;
 }
 
 /*website page header*/
@@ -191,6 +203,7 @@ footer {
 
 .landing-page__our-product-section {
   background-color: var(--light-gray);
+  padding-bottom: 1.875rem;
 }
 
 .landing-page__products {
@@ -209,6 +222,10 @@ footer {
   margin: 40px;
   text-align: center;
   font-size: 2.0625rem;
+}
+
+.view-all-products {
+  margin: 1.875rem auto;
 }
 
 .product-card > img {

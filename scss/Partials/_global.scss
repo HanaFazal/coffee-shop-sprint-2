@@ -28,7 +28,21 @@ h1,h2{
     width: 11.25rem;
     text-decoration: none;
     text-align: center;
+    position: relative;
+    display: block;
 }
+
+.button-outline{
+    border: 0.125rem solid var(--graphite);
+    width: 100%;
+    height: calc(100% - .625rem);
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    padding-top: .625rem;
+}
+
+
 
 
 /*website page header*/

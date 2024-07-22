@@ -12,18 +12,31 @@
     background-position: center;
     background-size: cover;
     background-image: url("../assets/images/coffee-circle.jpg");
+    display: flex;
+    align-items: center;
 }
 
 .main__tilebox{
-    .tilebox{
         background-color: var(--graphite);
         width: 18.75rem;
-        height: 12.5rem;
+        height: 10rem;
         padding: 1.25rem;
         color: var(--white);
         text-transform: uppercase;
         margin: 0 auto;
-    }
+        position: relative;
+
+}
+
+.main-outline{
+    border: .3125rem solid var(--nitro-blue);
+    width: 100%;
+    height: calc(100% - 3.75rem);
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    padding-top: 3.75rem;
+
 }
 
 .main__graphite-background{

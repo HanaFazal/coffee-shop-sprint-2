@@ -25,6 +25,18 @@ h1, h2 {
   width: 11.25rem;
   text-decoration: none;
   text-align: center;
+  position: relative;
+  display: block;
+}
+
+.button-outline {
+  border: 0.125rem solid var(--graphite);
+  width: 100%;
+  height: calc(100% - 0.625rem);
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding-top: 0.625rem;
 }
 
 /*website page header*/
@@ -153,16 +165,29 @@ footer {
   background-position: center;
   background-size: cover;
   background-image: url("../assets/images/coffee-circle.jpg");
+  display: flex;
+  align-items: center;
 }
 
-.main__tilebox .tilebox {
+.main__tilebox {
   background-color: var(--graphite);
   width: 18.75rem;
-  height: 12.5rem;
+  height: 10rem;
   padding: 1.25rem;
   color: var(--white);
   text-transform: uppercase;
   margin: 0 auto;
+  position: relative;
+}
+
+.main-outline {
+  border: 0.3125rem solid var(--nitro-blue);
+  width: 100%;
+  height: calc(100% - 3.75rem);
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  padding-top: 3.75rem;
 }
 
 .main__graphite-background {
